@@ -31,7 +31,6 @@ function updateElement($parent, newNode, oldNode, index = 0) {
   }
 }
 
-// ---------------------------------------------------------------------
 
 const a = h(
   'ul',
@@ -61,12 +60,12 @@ const b = h(
     null,
     'hello!'
   )
-);
+)
 
-const $root = document.getElementById('root');
-const $reload = document.getElementById('reload');
+const $root = document.getElementById('root')
+const $reload = document.getElementById('reload')
 
-updateElement($root, a);
+updateElement($root, a)
 $reload.addEventListener('click', () => {
-  updateElement($root, b, a);
-});
+  updateElement($root, b, a)
+})
